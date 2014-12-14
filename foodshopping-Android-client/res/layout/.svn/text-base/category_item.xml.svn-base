@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_bg" >
+
+    <ImageView
+        android:id="@+id/categoryImage"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:src="@drawable/nutfruit" />
+
+    <ImageView
+        android:id="@+id/row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/listview_row" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6.0dip"
+        android:layout_toLeftOf="@id/row"
+        android:layout_toRightOf="@id/categoryImage"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/mainTitle"
+            style="\@style/main_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="坚果炒货" />
+
+        <TextView
+            android:id="@+id/subTitle"
+            style="\@style/sub_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0dip"
+            android:singleLine="true"
+            android:text="带壳坚果 果仁 核桃 瓜子 花生" 
+            android:ellipsize="marquee"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+	<FrameLayout
+	    android:id="@+id/loginLinear10"
+	    android:layout_width="fill_parent"
+	    android:layout_height="48sp"
+	    android:background="@drawable/addshop_facus"
+	    android:orientation="horizontal" >
+	    <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/seck_back" />
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="30sp"
+	        android:text="我的账户"
+	        android:textColor="#FFFFFF"
+	        android:textSize="25sp" 
+	        android:layout_gravity="center_horizontal|center_vertical"/>
+
+	</FrameLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="\@style/size_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020卡号:"
+                android:textColor="@color/lgray" />
+
+            <TextView
+                android:id="@+id/ucard"
+                style="\@style/size_16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="50.0dip"
+                android:background="#00000000"
+                android:editable="false"
+                android:singleLine="true"
+                android:textColor="@color/lblack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="15.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="\@style/size_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020姓名:"
+                android:textColor="@color/lgray" />
+
+            <EditText
+                android:id="@+id/name"
+                style="\@style/size_16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="50.0dip"
+                android:background="@drawable/text_bg"
+                android:singleLine="true"
+                android:textColor="@color/lblack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="\@style/size_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020手机:"
+                android:textColor="@color/lgray" />
+
+            <TextView
+                android:id="@+id/mobile"
+                style="\@style/size_16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="50.0dip"
+                android:background="#00000000"
+                android:editable="false"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:textColor="@color/lblack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="15.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="\@style/size_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020地区:"
+                android:textColor="@color/lgray" />
+
+            <EditText
+                android:id="@+id/region"
+                style="\@style/size_16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="50.0dip"
+                android:background="@drawable/text_bg"
+                android:singleLine="true"
+                android:textColor="@color/lblack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="15.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="\@style/size_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="街道地址:"
+                android:textColor="@color/lgray" />
+
+            <EditText
+                android:id="@+id/address"
+                style="\@style/size_16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="50.0dip"
+                android:background="@drawable/text_bg"
+                android:singleLine="true"
+                android:textColor="@color/lblack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="15.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="\@style/size_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020邮编:"
+                android:textColor="@color/lgray" />
+
+            <EditText
+                android:id="@+id/zip"
+                style="\@style/size_16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="50.0dip"
+                android:background="@drawable/text_bg"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:textColor="@color/lblack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="15.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="\@style/size_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020邮箱:"
+                android:textColor="@color/lgray" />
+
+            <EditText
+                android:id="@+id/email"
+                style="\@style/size_16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="50.0dip"
+                android:background="@drawable/text_bg"
+                android:singleLine="true"
+                android:textColor="@color/lblack" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/keep"
+            android:layout_width="fill_parent"
+            android:layout_height="30sp"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/product_addshop"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/regionRelative"
+        android:layout_width="fill_parent"
+        android:layout_height="170.0dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cancle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/addressok_bg"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="取消"
+                android:textColor="@color/lgray"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/ok"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/addressok_bg"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="确定"
+                android:textColor="@color/lgray"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        
+    </RelativeLayout>
+
+</LinearLayout>

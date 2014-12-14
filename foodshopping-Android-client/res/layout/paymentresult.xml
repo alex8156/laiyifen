@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/add_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:background="@drawable/defray_icon1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="订单信息" style="\@style/mediuFont" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textColor="#ff797979" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单号：" style="\@style/mediuFont" />
+                <TextView android:id="@+id/orderId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="获取中..." style="\@style/mediuFont" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textColor="#ff797979" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已支付：" style="\@style/mediuFont" />
+                <TextView android:textColor="#fffc9342" android:id="@+id/payM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="获取中..." style="\@style/mediuFont" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textColor="#ff797979" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未支付：" style="\@style/mediuFont" />
+                <TextView android:textColor="#fffc9342" android:id="@+id/toPayM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="获取中..." style="\@style/mediuFont" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/add_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:background="@drawable/defray_icon2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="支付方式" style="\@style/mediuFont" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Spinner android:id="@+id/spinner" android:background="@drawable/add_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+                <ImageView android:background="@drawable/row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/yudianContent" android:background="@drawable/add_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您的卡号:" style="\@style/mediuFont" />
+                <TextView android:id="@+id/ucardNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取中..." android:singleLine="true" style="\@style/mediuFont" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="5.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="余 \u0020\u0020\u0020\u0020\u0020\u0020\u0020额:" style="\@style/mediuFont" />
+                <TextView android:textColor="#fffc9342" android:id="@+id/ucardAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取中..." android:singleLine="true" style="\@style/mediuFont" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="5.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="密 \u0020\u0020\u0020\u0020\u0020\u0020\u0020码:" style="\@style/mediuFont" />
+                    <EditText android:id="@+id/ucardPwd" android:background="@drawable/part_cz_bg" android:layout_width="100.0dip" android:layout_height="wrap_content" android:password="true" android:singleLine="true" style="\@style/mediuFont" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="5.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="验 \u0020证 \u0020码:" style="\@style/mediuFont" />
+                    <EditText android:id="@+id/yzmInfo" android:background="@drawable/part_cz_bg" android:layout_width="100.0dip" android:layout_height="wrap_content" android:password="true" android:singleLine="true" style="\@style/mediuFont" />
+                    <TextView android:id="@+id/yzmButton" android:background="@drawable/right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/yidianContent" android:background="@drawable/add_bg" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="卡号:" style="\@style/mediuFont" />
+                        <EditText android:textColor="@color/lblack" android:id="@+id/cardNumber" android:background="@drawable/part_cz_bg" android:layout_width="200.0dip" android:layout_height="wrap_content" android:singleLine="true" android:numeric="integer" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="密码:" style="\@style/mediuFont" />
+                        <EditText android:textColor="@color/lblack" android:id="@+id/cardPassword" android:background="@drawable/part_cz_bg" android:layout_width="200.0dip" android:layout_height="wrap_content" android:password="true" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/search" android:background="@drawable/right" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:text="查询" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/cardMoney" android:background="@drawable/yu_e" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="你当前伊点卡余额：" style="\@style/mediuFont" />
+                <TextView android:textColor="#fffc9342" android:id="@+id/yicardInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" style="\@style/mediuFont" />
+            </LinearLayout>
+            <TextView android:textColor="#ffe57313" android:gravity="right" android:id="@+id/otherYicard" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="选择已绑定的伊点卡" style="\@style/mediuFont" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/alipayContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="本次支付" style="\@style/mediuFont" />
+            <TextView android:textSize="22.0sp" android:textColor="#fffc9342" android:id="@+id/topayMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="获取中..." style="\@style/mediuFont" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="确定支付？" style="\@style/mediuFont" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/submit" android:background="@drawable/product_addshop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确认支付" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

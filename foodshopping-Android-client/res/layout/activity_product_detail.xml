@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+   	<RelativeLayout
+        android:id="@+id/loginLinear14"
+        android:layout_width="fill_parent"
+        android:layout_height="48sp"
+        android:orientation="vertical"
+        android:background="@drawable/addshop_facus" 
+        >
+        <ImageButton android:id="@+id/button_productinfo_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/selector_back_button"
+            />
+        <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="商品详情"
+           android:textSize="20sp"
+          	android:textColor="#ffffffff"
+          	android:layout_centerInParent="true"
+            />
+        <ImageButton 
+            android:id="@+id/button_product_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/share1"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            />
+        <ImageButton 
+            android:id="@+id/button_product_fresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fresh"
+            android:layout_toLeftOf="@+id/button_product_share"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+   <LinearLayout android:id="@+id/linearLayout"
+       android:layout_width="fill_parent"
+       android:layout_height="60dp"
+       android:orientation="horizontal"
+       android:layout_marginTop="48dp"
+       >
+
+         <RadioGroup
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent" 
+             android:orientation="horizontal"
+             
+             >
+
+	       	<RadioButton 
+	       	    android:id="@+id/button_baseinfo"
+	       	    style="@style/button_style_baseinfo" 
+	       	    android:layout_width="0dp"
+	       	    android:layout_height="fill_parent"
+	       	    android:drawableLeft="@drawable/selector_bt_baseinfo"
+	       	    android:text="基本信息"
+	       	    android:textSize="15sp"
+				android:button="@null"  
+				android:checked="true"
+				android:layout_weight="1"
+				android:gravity="center"
+	       	    />
+	       	<RadioButton 
+	       	    android:id="@+id/button_desc"
+	       	    style="@style/button_style_desc" 
+	       	    android:layout_width="0dp"
+	       	    android:layout_height="fill_parent"
+	       	    android:drawableLeft="@drawable/selector_bt_desc"
+	       	    android:text="商品详情"
+	       	    android:textSize="15sp"
+				android:button="@null"
+				android:layout_weight="1"
+				android:gravity="center"
+	       	   />
+	       	<RadioButton 
+	       	    android:id="@+id/button_comment"
+	       	    style="@style/button_style_comment" 
+	       	    android:layout_width="0dp"
+	       	    android:layout_height="fill_parent"
+	       	    android:drawableLeft="@drawable/selector_bt_comment"
+	       	    android:text="评论"
+	       	    android:textSize="15sp"
+				android:button="@null"
+				android:layout_weight="1"
+				android:gravity="center"
+	       	   />
+	    </RadioGroup>
+     
+   </LinearLayout >
+  
+   <android.support.v4.view.ViewPager
+       android:id="@+id/viewPager_product"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_below="@+id/linearLayout"
+       >
+      
+   </android.support.v4.view.ViewPager>
+	<ImageButton 
+	    android:id="@+id/product_car"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/shopcar"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentBottom="true"
+	    android:layout_margin="10dp"
+	    />
+   
+</RelativeLayout>

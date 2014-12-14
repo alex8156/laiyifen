@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout  android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <RelativeLayout  android:layout_width="fill_parent" android:layout_height="70dp">
+    <ImageView android:id="@+id/delete" android:background="@drawable/delete" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@+id/select" android:background="@drawable/address_normal" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/delete" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/edit" android:background="@drawable/right" android:visibility="gone" android:layout_width="60dp" android:layout_height="20dp" android:layout_marginRight="5.0dip" android:text="修改" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@+id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="" android:lines="2" android:layout_toLeftOf="@id/edit" android:layout_toRightOf="@id/select" android:layout_centerVertical="true" />
+</RelativeLayout>
+</RelativeLayout>

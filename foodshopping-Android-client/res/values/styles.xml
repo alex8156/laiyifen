@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+ 	<style name="main_button_style">
+ 	    <item name="android:layout_width">65dp</item>
+ 	    <item name="android:layout_height">40dp</item>
+ 	</style>
+ 	
+        <style name="button_style_guessing">
+	    <item name="android:button">@drawable/selector_bt_guessing</item>
+	    <item name="android:textColor">@drawable/selector_textcolor</item>
+	</style>
+ 	<style name="button_style_ranking">
+	    <item name="android:button">@drawable/selector_bt_ranking</item>
+	    <item name="android:textColor">@drawable/selector_textcolor</item>
+	</style>
+	<style name="button_style_baseinfo">
+	    <item name="android:button">@drawable/selector_bt_baseinfo</item>
+	    <item name="android:textColor">@drawable/selector_textcolor</item>
+	</style>
+	<style name="button_style_desc">
+	    <item name="android:button">@drawable/selector_bt_desc</item>
+	    <item name="android:textColor">@drawable/selector_textcolor</item>
+	</style>
+	<style name="button_style_comment">
+	    <item name="android:button">@drawable/selector_bt_desc</item>
+	    <item name="android:textColor">@drawable/selector_textcolor</item>
+	</style>
+	<style name="button_style_addshop">
+	    <item name="android:button">@drawable/selector_bt_addshop</item>
+	    <item name="android:textColor">@drawable/selector_textcolor</item>
+	</style>
+
+	<style name="MyRatingStar" parent="@android:style/Widget.RatingBar">
+	    <item name="android:progressDrawable">@drawable/rating_star</item>
+	    <item name="android:minHeight">20dp</item>
+	     <item name="android:maxHeight">20dp</item>
+	</style>
+
+	<style name="mediuFont">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/lblack</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+
+        <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="使用优惠券"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="@drawable/addshop_facus"/> 
+        <LinearLayout android:layout_width="match_parent" android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"> 
+       <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="优惠券抵扣:"
+        android:textSize="20dp"
+        android:textColor="#000000"
+         android:gravity="center_vertical"
+         />
+        <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="￥0"
+        android:textSize="20dp"
+        android:textColor="#ffc33c00"
+         android:gravity="center"
+        />
+    </LinearLayout>           
+        
+    <TableLayout 
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        >
+        
+        <TableRow android:orientation="horizontal">
+        
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="卡/券号:"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"       
+        android:gravity="center"/>
+        
+        <EditText  
+        android:id="@+id/editAndsave_btn"       
+	    android:layout_width="200dp"
+	    android:layout_height="match_parent"
+	    android:hint="输入卡/券号"
+	    android:gravity="center"
+	    android:textSize="16dp"
+	    android:textColor="#ffffff"
+	    android:layout_alignParentRight="true"		    	
+	 	/>
+        </TableRow>
+          
+        <TableRow android:orientation="horizontal">
+        
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="密码："
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"       
+        android:gravity="center"/>
+        
+        <EditText  
+        android:id="@+id/editAndsave_btn"       
+	    android:layout_width="200dp"
+	    android:layout_height="match_parent"
+	    android:hint="输入密码"
+	    android:gravity="center"
+	    android:textSize="16dp"
+	    android:textColor="#ffffff"
+	    android:layout_alignParentRight="true"		    	
+	 	/>
+        </TableRow>
+   <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/keep" android:background="@drawable/product_addshop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="使用" />
+  
+   </TableLayout>
+    
+    <TextView android:layout_width="match_parent" android:layout_height="fill_parent"
+       android:text="我的可用优惠券" android:textColor="#000000" android:layout_marginTop="20dp"/>
+		  
+      
+	
+   
+    
+    
+</LinearLayout>

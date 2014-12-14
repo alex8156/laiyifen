@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+   	<LinearLayout
+        android:id="@+id/loginLinear14"
+        android:layout_width="fill_parent"
+        android:layout_height="48sp"
+        android:orientation="vertical"
+        android:background="@drawable/addshop_facus" 
+        android:gravity="center"
+        >
+        <TextView 
+            android:id="@+id/textView_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="商品"
+           android:textSize="20sp"
+          	android:textColor="#ffffffff"
+            />
+    </LinearLayout>
+   <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="40dp"
+       android:orientation="horizontal"
+       
+       >
+         
+	       	<RadioButton 
+	       	    android:id="@+id/button_guessing"
+	       	    style="@style/button_style_guessing" 
+	       	    android:layout_width="wrap_content"
+	       	    android:layout_height="fill_parent"
+	       	    android:drawableLeft="@drawable/selector_bt_guessing"
+	       	    android:text="猜你爱吃"
+	       	    android:textSize="15sp"
+				android:button="@null"  
+				android:checked="true"
+				android:gravity="center"
+				android:layout_marginLeft="50dp"
+	       	    />
+	       	<RadioButton 
+	       	    android:id="@+id/button_ranking"
+	       	    style="@style/button_style_ranking" 
+	       	    android:layout_width="wrap_content"
+	       	    android:layout_height="fill_parent"
+	       	    android:drawableLeft="@drawable/selector_bt_ranking"
+	       	    android:text="人气排行"
+	       	    android:textSize="15sp"
+				android:button="@null"
+				android:layout_alignParentRight="true"  
+				android:layout_marginRight="50dp"
+	       	   />
+	    
+     
+   </RelativeLayout >
+  
+   <android.support.v4.view.ViewPager
+       android:id="@+id/viewPager_product"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       />
+
+
+</LinearLayout>

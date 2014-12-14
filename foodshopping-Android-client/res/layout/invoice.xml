@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+     <RelativeLayout 
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/addshop_facus"
+        android:layout_alignParentTop="true">
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="发票信息"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+        
+        <Button  
+        android:id="@+id/editAndsave_btn"       
+	    android:layout_width="80dp"
+	    android:layout_height="match_parent"
+	    android:text="保存" 
+	    android:gravity="center"
+	    android:textSize="16dp"
+	    android:textColor="#ffffff"
+	   android:background="@drawable/addshop_facus"
+	    android:layout_alignParentRight="true"	
+	    	
+	 	/>
+    </RelativeLayout>
+    <TableLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:gravity="center_vertical" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="是否开发票:" style="\@style/mediuFont" />
+            <RadioGroup android:orientation="horizontal" android:id="@+id/radioGroup_invoice" android:layout_weight="1.0">
+                <RadioButton android:id="@+id/radio_invoice_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="否" style="\@style/mediuFont" />
+                <RadioButton android:id="@+id/radio_invoice_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="是" style="\@style/mediuFont" />
+            </RadioGroup>
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="发票类型:\u0020" style="\@style/mediuFont" />
+            <RadioGroup android:orientation="horizontal" android:id="@+id/radioGroup_invoice_type" android:layout_weight="1.0">
+                <RadioButton android:id="@+id/radio_invoice_type_person" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="个人" style="\@style/mediuFont" />
+                <RadioButton android:id="@+id/radio_invoice_type_company" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="公司" style="\@style/mediuFont" />
+            </RadioGroup>
+        </TableRow>
+        <TableRow android:gravity="top" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="发票抬头:\u0020" style="\@style/mediuFont" />
+            <EditText android:gravity="center_vertical" android:id="@+id/editText_invoice_title" android:background="@drawable/search_bg" android:layout_width="fill_parent" android:layout_height="35.0dip" android:singleLine="true" android:layout_weight="1.0" style="\@style/mediuFont" />
+        </TableRow>
+        <TableRow android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_marginTop="5.0dip" android:text="备注:\u0020" style="\@style/mediuFont" />
+            <EditText android:gravity="top|left|center" android:id="@+id/editText_remark" android:background="@drawable/search_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" android:lines="3" android:layout_weight="1.0" style="\@style/mediuFont" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

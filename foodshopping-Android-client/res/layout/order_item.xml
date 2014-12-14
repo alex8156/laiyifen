@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/alllinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/search_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="\@style/mediuFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单号:" />
+
+            <TextView
+                android:id="@+id/orders_id"
+                style="\@style/mediuFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+                android:singleLine="true"
+                android:text="23423423"
+                android:textColor="@color/lred" />
+
+            <TextView
+                android:id="@+id/goods_item_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="0.31"
+                android:singleLine="true"
+                android:text="共1件"
+                android:textColor="#ffbcbcbc" />
+
+            <TextView
+                android:id="@+id/textView_status"
+                style="\@style/mediuFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="10.0dip"
+                android:singleLine="true"
+                android:text="SS" />
+        </LinearLayout>
+
+		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/line" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="\@style/mediuFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总额:"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/goods_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.78"
+                android:text="33.00"
+                android:textColor="@color/lred"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邮费:"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/mail_charg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="33.00"
+                android:textColor="@color/lred"
+                android:textSize="14.0sp" />
+
+            <TextView
+                style="\@style/mediuFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状态:"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/status"
+                style="\@style/mediuFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待付款"
+                android:textColor="@color/lred"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="\@style/mediuFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付方式："
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/pay_mode"
+                style="\@style/mediuFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.41"
+                android:text="网银"
+                android:textColor="@color/lred"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  邮递方式:"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/mail_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.39"
+                android:text="EMS"
+                android:textColor="@color/lred"
+                android:textSize="14.0sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="\@style/mediuFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间:" />
+
+            <TextView
+                android:id="@+id/date"
+                style="\@style/mediuFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.04"
+                android:text="2014/11/5 19:55:33"
+                android:textColor="@color/lred"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

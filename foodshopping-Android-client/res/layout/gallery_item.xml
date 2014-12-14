@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="5dp"
+>
+    <ImageView
+        android:id="@+id/dir_iamge"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:padding="6dp"
+        android:scaleType="centerCrop"/>
+</LinearLayout>

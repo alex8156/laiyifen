@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    
+    <ImageView android:id="@+id/fav_iv"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	     />
+   <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_toRightOf="@+id/fav_iv" 
+    >
+    
+     <TextView android:id="@+id/foodweight_tv"
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="五香肉条260g"
+        android:textColor="#000000"
+        />
+     <TextView android:id="@+id/foodtaste_tv"
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="山椒风味"
+        android:textColor="#000000"
+        android:layout_below="@+id/foodweight_tv"/>
+     
+        <TextView android:id="@+id/unitPrice_tv" 
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥34.01"
+        android:textSize="18sp"
+        android:textColor="#ffc33c00"
+        android:layout_below="@+id/foodtaste_tv"
+        />
+        <Button android:id="@+id/addcar_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加入购物蓝"
+            android:layout_below="@id/unitPrice_tv"
+            android:textColor="#ffc33c00"/>
+</RelativeLayout>
+
+</RelativeLayout>

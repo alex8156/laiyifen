@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:id="@+id/loginLinear10"
+        android:layout_width="fill_parent"
+        android:layout_height="48sp"
+        android:background="@drawable/addshop_facus"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="130sp"
+            android:layout_height="30sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="我的订单"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/add11"
+            android:layout_width="50sp"
+            android:layout_height="30sp"
+            android:layout_gravity="center_horizontal|center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/likeeat_next"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="查找"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/back4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/seck_back" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true" >
+
+            <RadioButton
+                android:id="@+id/RadioButton21"
+                style="@style/button_style_baseinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@+drawable/radiobutton21"
+                android:text="待付款"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/RadioButton22"
+                style="@style/button_style_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:button="@null"
+                android:drawableLeft="@+drawable/radiobutton22"
+                android:text="待发货"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/RadioButton23"
+                style="@style/button_style_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="0.40"
+                android:button="@null"
+                android:drawableLeft="@+drawable/radiobutton22"
+                android:text="全部订单"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/viewpage2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+   <!--1用户Servlet -->
+  <servlet>
+  	<servlet-name>UserServlet</servlet-name>
+  	<servlet-class>com.user.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserServlet</servlet-name>
+  	<url-pattern>/servlet/UserServlet</url-pattern>
+  </servlet-mapping>
+  <!--2	 	Servlet-->
+ <servlet>
+    <servlet-name>CategoryListServt</servlet-name>
+    <servlet-class>servlet.CategoryListServt</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CategoryListServt</servlet-name>
+    <url-pattern>/servlet/CategoryListServt</url-pattern>
+  </servlet-mapping>
+  <!--3	 	Servlet-->
+  <servlet>
+    <servlet-name>FlavorListServt</servlet-name>
+    <servlet-class>servlet.FlavorListServt</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FlavorListServt</servlet-name>
+    <url-pattern>/servlet/FlavorListServt</url-pattern>
+  </servlet-mapping>
+  <!--4	 	Servlet-->
+  <servlet>
+    <servlet-name>DefaultServlet</servlet-name>
+    <servlet-class>servlet.DefaultServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DefaultServlet</servlet-name>
+    <url-pattern>/servlet/DefaultServlet</url-pattern>
+  </servlet-mapping>
+  <!--5	 	Servlet-->
+   <servlet>
+    <servlet-name>DefaultServlet2</servlet-name>
+    <servlet-class>servlet.DefaultServlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DefaultServlet2</servlet-name>
+    <url-pattern>/servlet/DefaultServlet2</url-pattern>
+  </servlet-mapping>		
+<!--6	 	Servlet-->
+  <servlet>
+    <servlet-name>PriceServlet</servlet-name>
+    <servlet-class>servlet.PriceServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PriceServlet</servlet-name>
+    <url-pattern>/servlet/PriceServlet</url-pattern>
+  </servlet-mapping>
+  <!--7	 	Servlet-->
+   <servlet>
+    <servlet-name>PriceServlet2</servlet-name>
+    <servlet-class>servlet.PriceServlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PriceServlet2</servlet-name>
+    <url-pattern>/servlet/PriceServlet2</url-pattern>
+  </servlet-mapping>
+  <!--8	 	Servlet-->
+  <servlet>
+    <servlet-name>SalesServlet</servlet-name>
+    <servlet-class>servlet.SalesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SalesServlet</servlet-name>
+    <url-pattern>/servlet/SalesServlet</url-pattern>
+  </servlet-mapping>
+  <!--9	 	Servlet-->
+  <servlet>
+    <servlet-name>SalesServlet2</servlet-name>
+    <servlet-class>servlet.SalesServlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SalesServlet2</servlet-name>
+    <url-pattern>/servlet/SalesServlet2</url-pattern>
+  </servlet-mapping>
+  <!--10	 	Servlet-->
+   <servlet>
+    <servlet-name>FootPrintServlet</servlet-name>
+    <servlet-class>servlet.FootPrintServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FootPrintServlet</servlet-name>
+    <url-pattern>/servlet/FootPrintServlet</url-pattern>
+  </servlet-mapping>
+  <!--11	 	Servlet-->
+  <servlet>
+    <servlet-name>FootPrintInsertServlet</servlet-name>
+    <servlet-class>servlet.FootPrintInsertServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FootPrintInsertServlet</servlet-name>
+    <url-pattern>/servlet/FootPrintInsertServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!--12	 	Servlet-->
+  <servlet>
+    <servlet-name>MyFlavorEatServlet</servlet-name>
+    <servlet-class>servlet.MyFlavorEatServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyFlavorEatServlet</servlet-name>
+    <url-pattern>/servlet/MyFlavorEatServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!--13	 	Servlet-->
+   <servlet>
+    <servlet-name>MyFlavorEatDeleteServlet</servlet-name>
+    <servlet-class>servlet.MyFlavorEatDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyFlavorEatDeleteServlet</servlet-name>
+    <url-pattern>/servlet/MyFlavorEatDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <!--14	 	Servlet-->
+  <servlet>
+    <servlet-name>FootPrintDeleteServlet</servlet-name>
+    <servlet-class>servlet.FootPrintDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FootPrintDeleteServlet</servlet-name>
+    <url-pattern>/servlet/FootPrintDeleteServlet</url-pattern>
+  </servlet-mapping>
+
+  
+  <!--15	 	Servlet-->
+  <servlet>
+  	<servlet-name>QueryCateServlet</servlet-name>
+  	<servlet-class>com.cate.servlet.QueryCateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>QueryCateServlet</servlet-name>
+  	<url-pattern>/queryCateServlet</url-pattern>
+  </servlet-mapping>
+
+  <!--16	 	Servlet-->
+  <servlet>
+	<servlet-name>ProductListServlet</servlet-name> 
+	<servlet-class>com.cate.servlet.ProductListServlet</servlet-class>     
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>ProductListServlet</servlet-name>
+      <url-pattern>/ProductListServlet</url-pattern>
+  </servlet-mapping>
+  <!--17	 	Servlet-->
+   <servlet>
+      <servlet-name>ProductImagePathServlet</servlet-name>
+      <servlet-class>com.cate.servlet.ProductImagePathServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>ProductImagePathServlet</servlet-name>
+      <url-pattern>/ProductImagePathServlet</url-pattern>
+  </servlet-mapping>
+     <!--18购物车Servlet -->
+  <servlet>
+  	<servlet-name>ShoppingCarInitServlet</servlet-name>
+  	<servlet-class>com.cxl.servlet.ShoppingCarInitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShoppingCarInitServlet</servlet-name>
+  	<url-pattern>/shoppingCarInitServlet</url-pattern>
+  </servlet-mapping>
+   <!--19购物车图片下载-->
+  <servlet>
+  	<servlet-name>DownloadServlet05</servlet-name>
+  	<servlet-class>com.cxl.servlet.DownloadServlet05</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DownloadServlet05</servlet-name>
+  	<url-pattern>/downloadServlet05</url-pattern>
+  </servlet-mapping>
+   <!--20购物车数据同步-->
+  <servlet>
+  	<servlet-name>ShoppingCarSyncServlet</servlet-name>
+  	<servlet-class>com.cxl.servlet.ShoppingCarSyncServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShoppingCarSyncServlet</servlet-name>
+  	<url-pattern>/shoppingCarSyncServlet</url-pattern>
+  </servlet-mapping>
+   <!--21获取收货地址-->
+  <servlet>
+  	<servlet-name>AddAddressServlet</servlet-name>
+  	<servlet-class>com.cxl.servlet.AddAddressServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddAddressServlet</servlet-name>
+  	<url-pattern>/addAddressServlet</url-pattern>
+  </servlet-mapping>
+   <!--22收货地址操作-->
+  <servlet>
+  	<servlet-name>AddressOperateServlet</servlet-name>
+  	<servlet-class>com.cxl.servlet.AddressOperateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddressOperateServlet</servlet-name>
+  	<url-pattern>/addressOperateServlet</url-pattern>
+  </servlet-mapping>
+  <!--23订单提交-->
+  <servlet>
+  	<servlet-name>CommitOrderServlet</servlet-name>
+  	<servlet-class>com.cxl.servlet.CommitOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CommitOrderServlet</servlet-name>
+  	<url-pattern>/commitOrderServlet</url-pattern>
+  </servlet-mapping>
+  <!--24	 	Servlet-->
+  <servlet>
+      <servlet-name>DownLoadImageServlet</servlet-name>
+      <servlet-class>com.cate.servlet.DownLoadImageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>DownLoadImageServlet</servlet-name>
+      <url-pattern>/DownLoadImageServlet</url-pattern>
+  </servlet-mapping>
+  <!--25	 	Servlet-->
+  <servlet>
+      <servlet-name>AddToBasketServlet</servlet-name>
+      <servlet-class>com.cate.servlet.AddToBasketServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>AddToBasketServlet</servlet-name>
+      <url-pattern>/AddToBasketServlet</url-pattern>
+  </servlet-mapping>
+  <!--26	 	Servlet-->
+  <servlet>
+      <servlet-name>ShoppingCateDetailServlet</servlet-name>
+      <servlet-class>com.cate.servlet.ShoppingCateDetailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>ShoppingCateDetailServlet</servlet-name>
+      <url-pattern>/ShoppingCateDetailServlet</url-pattern>
+  </servlet-mapping>
+  <!--27	 	Servlet-->
+	<servlet>
+      <servlet-name>ShoppingCateCommentServlet</servlet-name>
+      <servlet-class>com.cate.servlet.ShoppingCateCommentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>ShoppingCateCommentServlet</servlet-name>
+      <url-pattern>/ShoppingCateCommentServlet</url-pattern>
+  </servlet-mapping>
+  <!--28	 	Servlet-->
+  <servlet>
+      <servlet-name>ShoppingSeckIllServlet</servlet-name>
+      <servlet-class>com.cate.servlet.ShoppingSeckIllServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>ShoppingSeckIllServlet</servlet-name>
+      <url-pattern>/ShoppingSeckIllServlet</url-pattern>
+  </servlet-mapping>
+  <!--29	 	Servlet-->
+  <servlet>
+      <servlet-name>SearchShoppingCateServlet</servlet-name>
+      <servlet-class>com.cate.servlet.SearchShoppingCateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>SearchShoppingCateServlet</servlet-name>
+      <url-pattern>/SearchShoppingCateServlet</url-pattern>
+  </servlet-mapping>
+  <!--30	 	Servlet-->
+   <servlet>
+      <servlet-name>MainInfoServlet</servlet-name>
+      <servlet-class>com.cate.servlet.MainInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>MainInfoServlet</servlet-name>
+      <url-pattern>/MainInfoServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
+

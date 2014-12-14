@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<FrameLayout
+	    android:id="@+id/loginLinear10"
+	    android:layout_width="fill_parent"
+	    android:layout_height="48sp"
+	    android:background="@drawable/addshop_facus"
+	    android:orientation="horizontal" >
+	    <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/seck_back" />
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="30sp"
+	        android:text="我的账户"
+	        android:textColor="#FFFFFF"
+	        android:textSize="25sp" 
+	        android:layout_gravity="center_horizontal|center_vertical"/>
+
+	</FrameLayout>
+    <RelativeLayout
+        android:id="@+id/account"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip" >
+
+        <ImageView
+            android:id="@+id/row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/row" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_toLeftOf="@+id/row"
+            android:text="信息更新"
+            android:textColor="@color/lblack"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="悠点卡号(会员)"
+                android:textColor="@color/lgray"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/usercardNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dip"
+                android:textColor="@color/lblack"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:id="@+id/recharge"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip" >
+
+        <ImageView
+            android:id="@+id/row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/row" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_toLeftOf="@+id/row"
+            android:text="充值"
+            android:textColor="@color/lblack"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:textColor="@color/lgray"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:id="@+id/integralHistory"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip" >
+
+        <ImageView
+            android:id="@+id/row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/row" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_toLeftOf="@+id/row"
+            android:text="历史记录"
+            android:textColor="@color/lblack"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:textColor="@color/lgray"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:id="@+id/ycardAdd"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/row" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_toLeftOf="@+id/row"
+            android:text="添加"
+            android:textColor="@color/lblack"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/ycardNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:textColor="@color/lgray"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/payHistory"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip" >
+
+        <ImageView
+            android:id="@+id/row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/row" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_toLeftOf="@+id/row"
+            android:text="查看"
+            android:textColor="@color/lblack"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:text="消费记录"
+            android:textColor="@color/lgray"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip" >
+
+        <ImageView
+            android:id="@+id/row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/row" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_toLeftOf="@+id/row"
+            android:text="查看"
+            android:textColor="@color/lblack"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:text="收货地址管理"
+            android:textColor="@color/lgray"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:id="@+id/soundPay"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip" >
+
+        <ImageView
+            android:id="@+id/row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/row" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_toLeftOf="@+id/row"
+            android:text="查看"
+            android:textColor="@color/lblack"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:text="声波支付"
+            android:textColor="@color/lgray"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+
+</LinearLayout>

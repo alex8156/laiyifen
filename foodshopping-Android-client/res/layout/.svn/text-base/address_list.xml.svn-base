@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout 
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/addshop_facus"
+        android:layout_alignParentTop="true">
+         <LinearLayout
+        android:id="@+id/linearLayout06"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+         > 
+         <ImageView
+       android:id="@+id/addConsigneeAddr_iv"                             
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="left|center"
+       android:src="@drawable/left_normal" 
+                            />
+	     <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"       
+            android:text="订单结算"
+            android:textColor="#ffffff"
+            android:textSize="18sp" 
+            android:gravity="center_vertical"/>
+	        </LinearLayout>
+        
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="购物车"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+        
+        <Button  
+        android:id="@+id/editAndsave_btn"       
+	    android:layout_width="80dp"
+	    android:layout_height="match_parent"
+	    android:text="编辑" 
+	    android:gravity="center"
+	    android:textSize="18sp"
+	    android:textColor="#ffffff"
+	   android:background="@drawable/addshop_facus"
+	    android:layout_alignParentRight="true"	
+	    	
+	 	/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayout02"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:gravity="center_horizontal" >
+
+        <ListView
+            android:id="@+id/consigneeAddress_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            />
+
+         <RelativeLayout android:gravity="center_horizontal" android:id="@+id/addressAdd_rl" android:background="@drawable/product_addshop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="10.0dip"
+             android:layout_below="@+id/consigneeAddress_lv">
+                <ImageView android:id="@+id/add" android:background="@drawable/address_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip"  android:text="新增收货地址" android:layout_toRightOf="@id/add" android:layout_centerVertical="true" />
+            </RelativeLayout>
+   		 </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_shopcart_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shopping" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="60.0dip"
+            android:text="购物车还是空的，请快去选购吧~!"
+            android:textColor="#ff797979"
+            android:textSize="18.0dip" />
+    </LinearLayout>
+
+</RelativeLayout>
